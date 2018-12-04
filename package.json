@@ -1,0 +1,21 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "MOVIE DB WITH GRAPHQL",
+  "main": "index.js",
+  "repository": "https://github.com/aaaalpooo/movieql",
+  "author": "aaaalpooo",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.16.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src node src",
+    "start:dev": "cross-env NODE_PATH=src nodemon --exec babel-node --watch src/ src/index.js"
+  }
+}
