@@ -12,7 +12,7 @@ const client = new ApolloClient({
   link: new HttpLink({
     uri: "http://localhost:4000"
   }),
-  cache: new InMemoryCache()
+  cache: new InMemoryCache().restore(window.__APOLLO_STATE__)
 });
 
 ReactDOM.render(
