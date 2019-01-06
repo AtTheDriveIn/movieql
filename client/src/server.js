@@ -43,7 +43,7 @@ app.use((req, res) => {
     .then(content => {
       res.status = 200;
       const html = <Html content={content} client={client} />;
-      res.send(`<!doctype html>\n${ReactDOM.renderToString(html)}`);
+      res.send(`<!DOCTYPE html>\n${ReactDOM.renderToString(html)}`);
       res.end();
     })
     .catch(e => {
